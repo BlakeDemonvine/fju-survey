@@ -139,21 +139,11 @@ p { margin: 0 0 .8em; }
 /* ---------- 版面 ---------- */
 .app {
   flex: 1; max-width: var(--maxw); width: 100%; margin: 0 auto;
-  padding: 18px var(--app-gutter) 48px;
+  padding: 18px var(--app-gutter) calc(48px + env(safe-area-inset-bottom, 0px));
   padding-left: max(var(--app-gutter), env(safe-area-inset-left, 0px));
   padding-right: max(var(--app-gutter), env(safe-area-inset-right, 0px));
 }
 
-.footer {
-  border-top: 1px solid var(--border);
-  background: var(--bg-elev);
-  padding: 18px 14px calc(22px + env(safe-area-inset-bottom, 0px)); text-align: center;
-  color: var(--text-dim); line-height: 1.9;
-}
-.footer-line { font-size: clamp(11px, 2.7vw, 13px); }
-.footer-line strong, .footer-line .sep { white-space: nowrap; }
-.footer strong { color: var(--text); font-weight: 700; }
-.footer .sep { color: var(--amber); margin: 0 6px; }
 
 /* ---------- 卡片 ---------- */
 .card, .q-card {
@@ -161,7 +151,7 @@ p { margin: 0 0 .8em; }
   border-radius: var(--radius); box-shadow: var(--shadow-sm);
   padding: 20px;
 }
-.card + .card, .q-card { margin-top: 14px; }
+.card + .card, .q-card, .q-card + .card { margin-top: 14px; }
 
 /* ---------- 開頭說明 ---------- */
 .intro .eyebrow {
@@ -438,7 +428,7 @@ input::placeholder, textarea::placeholder { color: var(--text-faint); }
 /* ---------- 手機 ---------- */
 @media (max-width: 640px) {
   :root { --app-gutter: 14px; }
-  .app { padding: 14px var(--app-gutter) 36px; }
+  .app { padding: 14px var(--app-gutter) calc(36px + env(safe-area-inset-bottom, 0px)); }
   .hero { padding: 0 14px; margin-top: 12px; }
   h1 { font-size: 1.3rem; }
   .topbar-inner { gap: 8px; padding: 9px 14px; }
