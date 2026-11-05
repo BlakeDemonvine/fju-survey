@@ -133,7 +133,8 @@ p { margin: 0 0 .8em; }
 .hero img {
   width: 100%; display: block; border-radius: var(--radius);
   box-shadow: var(--shadow); border: 1px solid var(--border);
-  aspect-ratio: 1491 / 1055; background: var(--bg-sunken);
+  /* 高度跟著圖片自己的比例走，之後換成任何尺寸的圖都不會被壓扁或拉長 */
+  height: auto; background: var(--bg-sunken);
 }
 
 /* ---------- 版面 ---------- */
