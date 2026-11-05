@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>活動回饋問卷｜2026 原力萌芽 幸福親子園遊會</title>
+<meta name="description" content="2026 原力萌芽 幸福親子園遊會 — 活動回饋問卷">
+<meta property="og:title" content="2026 原力萌芽 幸福親子園遊會｜活動回饋問卷">
+<meta property="og:description" content="手牽手・走進文化・一起長大 — 花兩分鐘告訴我們您今天的感受">
+<meta property="og:image" content="assets/fju2026.jpg">
+<meta name="theme-color" content="#FBF4E6">
+<meta name="format-detection" content="telephone=no">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌱</text></svg>">
+
+<!-- 送出時才會連到 Apps Script，先把 TLS 交握做好，按下送出會快一點。
+     script.googleusercontent.com 是 Apps Script 真正回資料的網域。 -->
+<link rel="preconnect" href="https://script.google.com" crossorigin>
+<link rel="preconnect" href="https://script.googleusercontent.com" crossorigin>
+
+<link rel="stylesheet" href="css/style.css">
+<script src="js/config.js"></script>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">
+      <span class="brand-mark" id="growMark" aria-hidden="true">🌱</span>
+      <span class="brand-text"><strong>2026原力萌芽 幸福親子園遊會</strong></span>
+    </div>
+    <div class="progress-chip" id="progressChip" aria-live="polite">
+      <span class="pc-label">已完成</span> <b id="progressText">0 / 0</b>
+    </div>
+  </div>
+  <div class="progress-bar" aria-hidden="true"><span id="progressFill"></span></div>
+</header>
+
+<div class="hero">
+  <img src="assets/fju2026.jpg" alt="2026 原力萌芽 幸福親子園遊會 主視覺：11/21（六）09:00～15:00" decoding="async" fetchpriority="high">
+</div>
+
+<main id="app" class="app">
+  <noscript>
+    <div class="card notice notice-danger">這份問卷需要開啟 JavaScript 才能填寫。</div>
+  </noscript>
+  <div class="loading"><span class="spinner"></span><span>載入問卷中…</span></div>
+</main>
+
+<footer class="footer">
+  <div class="footer-line">主辦單位：<strong>天主教輔仁大學</strong></div>
+  <div class="footer-line">承辦執行：<strong>民生學院</strong><span class="sep">●</span><strong>兒童與家庭學系</strong><span class="sep">●</span><strong>輔仁大學輔幼中心</strong></div>
+  <div class="footer-line">協辦單位：<strong>輔仁大學教務處USR HUB辦公室</strong><span class="sep">●</span><strong>輔仁大學原住民族學生資源中心</strong></div>
+  <div class="footer-line">網頁系統設計：<strong>楊予凱</strong></div>
+</footer>
+
+<div id="toastHost" class="toast-host" aria-live="polite"></div>
+
+<script src="js/questions.js"></script>
+<script src="js/form.js"></script>
+</body>
+</html>
