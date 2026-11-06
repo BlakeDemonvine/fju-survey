@@ -24,7 +24,7 @@ var Survey = (function () {
 
   var SURVEY = {
     /* 改題目就改這個字串（隨便改成什麼都可以，只要兩邊一樣） */
-    version: '2026-11-04b',
+    version: '2026-11-06a',
 
     questions: [
       {
@@ -86,9 +86,10 @@ var Survey = (function () {
         options: ['主舞台表演活動', '攤位／市集', '野餐', '親子攝影活動', { label: '其他', other: true }]
       },
       {
-        id: 'spend', no: '八', code: 'Q8', short: '花費',
-        title: '您願意在本次原遊會花費多少金額？', type: 'single', required: true,
-        options: ['500元以下', '500-750元', '750-1000元', '1000-1500元', '1500-2000元', '2000元以上']
+        id: 'timeSpent', no: '八', code: 'Q8', short: '花費時間',
+        title: '請問您為了參加本次園遊會，總共花費多少時間（包含交通及現場參與時間）？',
+        type: 'single', required: true,
+        options: ['未滿30分鐘', '30分鐘至未滿1小時', '1小時至未滿2小時', '2小時至未滿3小時', '3小時以上']
       },
       {
         id: 'satisfaction', no: '九', code: 'Q9', short: '綜合',
