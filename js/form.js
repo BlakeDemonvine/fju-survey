@@ -209,7 +209,7 @@
         '<h1>親愛的參與者您好：</h1>' +
         '<p>感謝您撥冗參加本次園遊會活動。為了解活動的整體實施情形，並作為未來活動規劃與品質提升之參考，懇請您協助填寫以下問卷。</p>' +
         '<p style="margin:0">再次感謝您的寶貴時間與支持！</p>' +
-        '<p class="sign">輔仁大學民生學院<br>輔仁大學原住民族關懷培力棧　敬上</p>' +
+        '<p class="sign">輔仁大學民生學院<br>輔仁大學原住民家庭關懷培力棧　敬上</p>' +
         '<div class="intro-meta">' +
           '<span class="tag tag-brand">共 ' + total + ' 題</span>' +
           '<span class="tag tag-muted">⏱ 約 2 分鐘</span>' +
